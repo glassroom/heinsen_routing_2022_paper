@@ -1,6 +1,6 @@
 # heinsen_routing_2022_paper
 
-Instructions for replicating the results published in "An Algorithm for Routing Vectors in Sequences" (Heinsen, 2022).
+Instructions for replicating the results in "An Algorithm for Routing Vectors in Sequences" (Heinsen, 2022).
 
 
 ## Replication of results in paper
