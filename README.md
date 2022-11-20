@@ -78,6 +78,8 @@ If our work is helpful to your research, please cite it:
     title={An Algorithm for Vectors in Sequences},
     author={Franz A. Heinsen},
     year={2022},
+    eprint={PENDING},
+    archivePrefix={arXiv},
     primaryClass={cs.LG}
 }
 ```
