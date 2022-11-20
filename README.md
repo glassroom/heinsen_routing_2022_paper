@@ -45,11 +45,9 @@ jupyter lab
 
 ## Training All Classification Heads from Scratch
 
-We provide code for training all classification heads. You may have to tweak it to make it work with your particular setup. As written, the training code assumes you have at least one Nvidia GPU with 24GB+ RAM along with a recent working installation of CUDA, but the code is meant to be easily modifiable to work with different memory budgets (e.g., by reducing batch sizes), or with two or more lower-capacity GPUs (e.g., you can run the pretrained transformer in one device and the clasification head in another), or with TPUs instead of GPUs.
+We provide code for training all classification heads. As written, the training code assumes you have at least one Nvidia GPU with 24GB+ RAM along with a recent working installation of CUDA, but the code is meant to be easily modifiable to work with different setups. Follow these steps to train all classification heads:
 
-Follow these steps to train all classification heads:
-
-1. Download the ImageNet-1K dataset to the folling directory: `.data/vision/imagenet/`. Create the directory if necessary.
+1. Download the ImageNet-1K dataset to `.data/vision/imagenet/`. Create the directory if necessary.
 
 2. Review the training code in `train.py` and modify it as necessary so it works with your particular hardware and software configuration.
 
@@ -61,7 +59,7 @@ Follow these steps to train all classification heads:
 ./train_all_heads.sh
 ```
 
-Depending on your hardware, training all classification heads may take as little as a few hours, or up to a few days.
+Depending on your setup, training all heads may take as little as a few hours or up to a few days.
 
 
 ## Notes
