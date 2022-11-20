@@ -30,8 +30,8 @@ source ./python/bin/activate
 ```
 pip install --upgrade pip
 pip install --upgrade -r requirements.txt
-pip install -e git+https://github.com/glassroom/torch_train_test_loop
-pip install -e git+https://github.com/glassroom/heinsen_routing
+pip install git+https://github.com/glassroom/torch_train_test_loop
+pip install git+https://github.com/glassroom/heinsen_routing
 ```
 
 5. Open the Jupyter notebooks:
