@@ -1,6 +1,6 @@
 # heinsen_routing_2022_paper
 
-Instructions for replicating the results in "An Algorithm for Routing Vectors in Sequences" (Heinsen, 2022).
+Instructions for replicating the results in "[An Algorithm for Routing Vectors in Sequences](https://arxiv.org/abs/2211.11754)" (Heinsen, 2022).
 
 
 ## Replication of Results in Paper
@@ -76,7 +76,7 @@ If our work is helpful to your research, please cite it:
     title={An Algorithm for Vectors in Sequences},
     author={Franz A. Heinsen},
     year={2022},
-    eprint={PENDING},
+    eprint={2211.11754},
     archivePrefix={arXiv},
     primaryClass={cs.LG}
 }
