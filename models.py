@@ -63,8 +63,8 @@ class MultiModalClassifier(nn.Module):
                     pad_chunk = torch.stack(self.transformer(
                         input_ids=torch.tensor([bos_id, eos_id] + [pad_id]*n_pad)[None, :],
                         attention_mask=torch.tensor([1, 1] + [0]*n_pad)[None, :],
-                    ).hidden_states, dim=-2)  # [1, n pos, depth, d_emb]
-            self.register_buffer('pad_chunk', pad_chunk)  # [1, chunk_len, depth, d_emb]
+                    ).hidden_states, dim=-2)  # [1, chunk_len, d_depth, d_emb]
+            self.register_buffer('pad_chunk', pad_chunk)  # [1, chunk_len, d_depth, d_emb]
         else:  # Modality.IMGS
             self.pad_chunk = None
 
