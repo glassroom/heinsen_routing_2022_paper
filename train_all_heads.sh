@@ -1,4 +1,10 @@
-# Turn off tokenizer parallelism
+# NOTE: We use very similar training regimes in all cases, mainly because we
+# didn't invest too much effort on each benchmark. Our interest was/is mainly
+# in providing evidence that our routing algorithm and its credit assignments
+# work as expected. With more careful tweaking of training hyperparameters,
+# it may be possible to obtain better results on some/all benchmarks.
+
+# Turn off tokenizer parallelism to silence annoying warning messages.
 export TOKENIZERS_PARALLELISM=false
 
 python train.py\
