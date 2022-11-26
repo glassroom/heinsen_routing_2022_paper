@@ -45,15 +45,15 @@ jupyter lab
 
 ## Training All Classification Heads from Scratch
 
-We provide code for training all classification heads. As written, the training code assumes you have at least one Nvidia GPU with 24GB+ RAM along with a recent working installation of CUDA, but the code is meant to be easily modifiable to work with different setups. Follow these steps to train all classification heads:
+We provide code for training all classification heads. As written, the training code assumes you have at least one Nvidia GPU with 24GB+ VRAM along with a recent working installation of CUDA, but the code is meant to be easily modifiable to work with different setups. Follow these steps to train all classification heads:
 
 1. Download the ImageNet-1K dataset to `.data/vision/imagenet/`. Create the directory if necessary.
 
-2. Review the training code in `train.py` and modify it as necessary so it works with your particular hardware and software configuration.
+2. Review the training code in `train.py` and modify it as necessary so it works with your particular hardware and software configuration (e.g., if you have more than 24GB of VRAM available, you can disable autocasting to half-precision when applying the pretrained transformer in the forward pass, which may improve accuracy).
 
-3. Review the shell script `train_all_heads.sh` and modify it as necessary so it works with your particular hardware and software configuration (e.g., you can decrease batch sizes while increasing number of iterations per epoch to reduce memory consumption).
+3. Review the shell script `train_all_heads.sh` and modify it as necessary so it works with your particular hardware and software configuration (e.g., you can decrease batch sizes while increasing number of training iterations per epoch to reduce memory requirements).
 
-4. Make sure the virtual environment is activated (`source ./python/bin/activate`), and then run the shell script to train all classification heads:
+4. Make sure the virtual environment is activated beforehand (`source ./python/bin/activate`), and then run the shell script to train all classification heads:
 
 ```
 ./train_all_heads.sh
