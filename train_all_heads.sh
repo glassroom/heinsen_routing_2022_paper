@@ -1,9 +1,8 @@
 # NOTE: We use very similar training regimes in all cases, mainly because we
-# didn't invest too much effort on each benchmark. When we trained heads for
-# these benchmarks, our motivation was to obtain shareable evidence that our
-# routing algorithm and its credit assignments work as we already knew from
-# our (non-shareable) proprietary work. With more careful tweaking of hyper-
-# parameters, you may be able to obtain better results on these benchmarks.
+# didn't invest too much effort on each benchmark. our motivation was to obtain
+# shareable evidence that our routing algorithm and its credit assignments work
+# as we already knew from (non-shareable) proprietary work. With more careful
+# tweaking of hyper-parameters, you may be able to obtain better results.
 
 # Turn off tokenizer parallelism to silence annoying warning messages.
 export TOKENIZERS_PARALLELISM=false
