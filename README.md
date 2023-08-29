@@ -63,9 +63,7 @@ Depending on your setup, training all heads may take as little as a few hours or
 
 ## Notes
 
-Please see this comment about handling padding tokens in natural language data:
-
-https://github.com/glassroom/heinsen_routing_2022_paper/issues/1
+Please see [this comment](https://github.com/glassroom/heinsen_routing_2022_paper/issues/1) about handling padding tokens in natural language data.
 
 We have tested the code in this repository only on Ubuntu Linux 20.04 with Python 3.8+.
 
